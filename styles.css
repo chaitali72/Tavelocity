@@ -1,0 +1,45 @@
+@import url("./_global.css");
+
+/* navbar styles */
+
+.navbar-logo{
+    align-items: center;
+    text-align: center;
+}
+h1 .navbar-logo-link{
+    font-size: 1.5rem;
+color: var(--blue-color);
+}
+.navbar-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+.navabar-menu-item{
+    margin: 1rem;
+    
+}
+.navabar-menu-item:hover,
+.navbar-menu-pages--active{
+border-bottom:5px solid var(--orange-color);
+}
+.navbar-menu-link {
+    color:var(--blue-color);
+}
+/* tablet  */
+@media screen and (min-width:768px) {
+    .navbar-menu{
+    display: flex;
+    top:0;
+    right: 0;
+    left:0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow);
+    }
+    .navbar-menu-link{
+        font-size: 1.2rem;
+    }
+} 

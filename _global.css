@@ -1,0 +1,26 @@
+:root{
+    --blue-color:#335576;
+    --white-color: #FFFFFF;
+    --lightblue-color: #B5DDDE;
+    --rose-color:#FEFAF5;
+    --orange-color:#DB7A4E;
+--light-orange-color: #fce8e0;
+--black-color: #000;
+--black-opacity: rgba(0, 0, 0, 0.2);
+--font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+--box-shadow:0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
