@@ -1,7 +1,12 @@
 @import url("./_global.css");
 
 /* navbar styles */
+.navbar-menu{
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    width: 100vw;
 
+}
 .navbar-logo{
     align-items: center;
     text-align: center;
@@ -37,9 +42,220 @@ border-bottom:5px solid var(--orange-color);
     justify-content: space-between;
     align-items: center;
     background-color: var(--white-color);
-    box-shadow: var(--box-shadow);
+    
     }
     .navbar-menu-link{
         font-size: 1.2rem;
     }
 } 
+/*hero section styles */
+.hero-section{
+    background-color: var(--rose-color);
+height: 40rem;
+    width: 100%;
+}
+.hero-section--content{
+    padding: 5rem 2rem;
+}
+.hero-section--img{
+    display: none;
+}
+.hero-section--title{
+font-size: 2.5rem;
+font-family: var(--font-family);
+color:var(--blue-color)
+}
+.hero-section--text{
+margin: 1.5rem 0;
+    font-size: 1rem;
+    color: var(--black-color);
+line-height: 1.5rem;
+}
+.hero-section--btn{
+    background-color: var(--orange-color);
+    color: var(--black-color);
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+  
+}
+@media screen and (min-width:768px) {
+    .hero-section{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .hero-section--content{
+        width: 40%;
+    }
+
+    .hero-section--title{
+        font-size: 3rem;
+    line-height: 3.8rem;
+     margin-bottom: 3rem;
+    }
+    .hero-section--text{
+        font-size: 1.5rem;
+        color: var(--blue-color);
+        line-height: 1.8rem;
+        margin-bottom: 3rem;
+    }
+    .hero-section--img{
+       display: block;
+    }
+    .hero-section--img img{
+        width: 400px;
+        margin: 3rem;
+    }
+}
+
+/* Recommendations Section */
+.recommendation-section{
+    margin-top: 2.5rem;
+}
+.rec--title{
+    color: var(--blue-color);
+    font-size: 2rem;
+    text-align: center;
+}
+.rec-images-cards{
+margin: 2rem;
+
+}
+.rec-image-card img{
+    width: 100%;
+    height: 20rem;
+border-radius: 10px;
+margin-bottom: 1rem;
+
+}
+.rec-img-text{
+ position: relative;
+left: 16.25rem;
+bottom: 3rem;
+font-weight: bold;
+color:var(--white-color);
+}
+
+/* tablet and desktop */
+@media screen and (min-width:768px) {
+.rec-images-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.rec-image-card img{
+  height: 30rem;
+}
+.rec-img-text{
+    left: 13.52rem;
+    bottom: 4.2rem;
+    font-size: 1.2rem;
+}
+}
+/* footer styles */
+.footer-cards{
+   background-color: var(--rose-color);
+    align-items: center;
+}
+h2{
+    margin-bottom: 1rem;  
+}
+
+.footer-card{
+    color:var(--blue-color);
+    margin-bottom: 2rem;
+}
+.footer-timer-card{
+    margin-bottom: 2.5rem;
+}
+.time-card-subtext{
+    color: var(--orange-color);
+    text-transform: uppercase;
+}
+.social{
+    display: flex;
+}
+.social-icon{
+    width: 2rem;
+    margin-right: 1.5rem;
+    height: 2rem;
+}
+@media screen and (min-width:768px) {
+    .footer-cards{
+   height: 15rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    h2{
+        text-align: center;
+    }
+    .time-card-subtext{
+        text-align: center;
+    }
+    .footer-timer-cards{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-timer-card{
+        margin: 1rem;
+    }
+}
+/* hawaii-section styles */
+.hawaii-hero-section{
+margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+.hawaii-section{
+    background-image: url("./assets/images/hawaii.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.hawaii-hero-title{
+    font-size: 2rem;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.hero-section-menu{
+    display: flex;
+    flex-direction: column;
+}
+.menu-items{
+    /* border: 2px solid red; */
+    background-color: var(--white-color);
+  width: 50%;
+    margin: 1rem;
+    border-radius: 0.3125rem;
+    box-shadow: var(--box-shadow);
+   
+    padding: 1rem;
+}
+.menu-items h3{
+    text-align: center;
+    border-bottom: 2px solid var(--orange-color);
+}
+.menu-items ul li {
+margin: 0.5rem;
+background-color: var(--light-orange-color);
+}
+
+@media screen and (min-width:768px) {
+    .hawaii-hero-section{
+        flex-direction: row;
+        display: flex;
+        text-align: center;
+       
+    }
+    .hero-section-menu{
+        display: flex;
+        flex-direction: row;
+        border: 2px solid red;
+    }
+    .hawaii-section{
+max-height: 100vh;
+
+    }
+}
